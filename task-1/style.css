@@ -1,0 +1,403 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+#navbar{
+    height: 100px ;
+    width: 100%;
+    background-color:#000;
+    color:#fff;
+    display: flex;
+}
+.nav{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+     
+}
+.nav h4{
+    position: relative;
+    margin: 10px ;
+    margin-left: 200px ;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+ /* h4::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color: aqua;
+    transition: all ease 1s;
+} */
+.nav h4::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px ;
+    bottom: 0;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: 0 100%;
+    transition: transform 0.3s ease;
+}
+
+.nav h4:hover::before{
+    transform: scaleX(1);
+}
+h4:hover{
+
+cursor: pointer;}
+h4 span{
+    color:white ;
+}
+h4 .co{
+    color: #fc6203;
+}
+.nav-item{
+    display: flex ;
+    font-size: 1rem;
+    margin-left: 400px;
+    margin-top:7px  ;
+    font-weight:600;
+    transition: all ease 1s ;
+}
+.nav-item li{
+    padding: 14px ;
+    list-style: none ;
+}
+.nav-item li:hover{
+ cursor: pointer;
+ color: #fc6203;
+ transform: scale(1.2);
+}
+
+.banner{
+    background-image:linear-gradient(to right, rgba(4,12,43,0.6) 50%, transparent 50%) , url("./image1.jpg");
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    overflow: hidden;
+}
+.banner h2{
+   
+   font-size: 3.5rem;
+   color: #fff;
+   
+}
+.image-banner{
+    background-color: #000000;
+}
+.banner{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.banner {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    cursor: pointer;
+}
+.banner:hover{
+    filter: grayscale(0%);
+}
+.text{
+    margin: 30px ;
+    margin-top: 200px ;
+}
+.content{
+    background-color: #000000;
+    overflow: hidden;
+}
+.content-div p{
+    color: aqua;
+    padding-top: 80px;
+    margin-left: 40px ;
+
+}
+.content-div{
+    background-color: #000000;
+}
+.content-div h2{
+    color: #fff;
+    margin: 40px ;
+}
+.card{
+    background-color: aqua;
+    height:370px;
+    width: 330px ;
+    margin-top: 100px;
+    margin-left: 40px ;
+    margin-bottom: -60px;
+    transition: all ease 1s;
+    
+}
+.card{
+    display: inline;
+}
+
+   
+
+.card h1:hover{
+    
+    color: #fc6203;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.card h5:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.icon{
+    font-size: 2rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 20px ;
+    margin-top: 30px ;
+}
+.card i {
+    margin-left:30%;
+    border: 4px solid black ;
+    border-radius: 50%;
+    color: white ;
+    background-color: #fc6203;
+    font-size: 40px ;
+}
+.card i:hover{
+    color: pink;
+    background-color: white;
+    border: 4px solid green;
+    cursor: pointer;
+}
+.card h5{
+    padding-left: 20px ;
+}
+.col{
+    margin: 10px ;
+    padding: 20px ;
+}
+.card-item{
+    display: flex ;
+}
+.card img{
+    width: 100px ;
+    margin-left: 30%;
+    padding-top: 20px ;
+    
+
+}
+.card{
+    border-radius: 10px ;
+}
+.card .img2{
+width: 80px;
+}
+.cards{
+    margin-left:50px  ;
+    margin-bottom: 50px;
+}
+.text-div{
+    background-color: #000000;
+    transition: all ease 1s;
+}
+.text-div span{
+    color:aquamarine;
+}
+.text-div h1{
+    color: #fff;
+} 
+.text-div  p{
+    color:#ABADB3;
+}
+.text-div p{
+     padding-left: 250px ;
+     padding-right: 250px ;
+     padding-top: 60px ;
+}
+.text-div h1{
+    padding-left: 250px ;
+    padding-right: 250px ;
+    font-size: 3rem ;
+   
+}
+.text-div span{
+    display: block;
+    padding-left: 250px ;
+    padding-right: 250px ;
+   padding-top: 40px;
+   font-size: 20px ;
+}
+.text-div input{
+    background-color: rgb(200, 16, 224);
+    border: none;
+    height: 40px ;
+    width: 120px ;
+    margin-left: 300px ;
+    margin-top: 30px ;
+    font-size: 15px;
+    margin-bottom: 80px ;
+    border-radius: 20px ;
+    color: #fff;
+}
+.text-div input:hover{
+    
+    background-color:deeppink ;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.showcase{
+    background-color: #000000;
+}
+.all-image img{
+    height: 380px ;
+    width: 220px;
+    border-radius: 2px;
+    margin: 10px ;
+    object-fit: cover;
+}
+
+.all-image{
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    transition: all ease 1s;
+}
+.all-image img:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+.foot1{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+.footer{
+    background-color: #000000;
+    padding-bottom: 50PX ;
+}
+.foot1{
+padding-top: 50px ;
+}
+.foot1 ul li{
+    padding: 5px;
+}
+.foot1 h1{
+ margin-top: 8px ;
+ padding-bottom: 10PX ;
+}
+.foot1 .link{
+list-style: none ;
+}
+.foot1 .link i{
+     color: rgb(145, 145, 6);
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    background-color: #000000;
+    padding-top: 30px ;
+}
+.app{
+    display: flex;
+    transition: all ease 1s;
+  
+}
+.band1{
+    border-radius: 15px ;
+    padding-left: 12px ;
+    padding-top: 3px ;
+    padding-bottom: 2px ;
+    height: 25px ;
+    width: 40px ;
+    margin-bottom: 60px ;
+     margin-left: 4px ;
+     background-color: blue;
+
+}
+
+.band2{
+    border-radius: 15px ;
+    padding-left: 12px ;
+    padding-top: 3px ;
+    padding-bottom: 2px ;
+    height: 25px ;
+    width: 40px ;
+
+    margin-left: 4px ;
+    background-color: red ;
+}
+
+.band3{
+    border-radius: 15px ;
+    padding-left: 12px ;
+    padding-top: 3px ;
+    padding-bottom: 2px ;
+    height: 25px ;
+    width: 40px ;
+   background-color: rgb(7, 133, 175);
+    margin-left: 4px ;
+}
+
+.band4{
+    border-radius: 15px ;
+    padding-left: 12px ;
+    padding-top: 3px ;
+    padding-bottom: 2px ;
+    height: 25px ;
+    width: 40px ;
+    margin-left: 4px ;
+    background-color: rgb(81, 81, 241);
+
+}
+
+.band5{
+    border-radius: 15px ;
+    padding-left: 12px ;
+    padding-top: 3px ;
+    padding-bottom: 2px ;
+    height: 25px ;
+    width: 40px ;
+    margin-left: 4px ;
+    background-color: rgb(231, 41, 130);
+    
+}
+.band1:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.band2:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.band3:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.band4:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.band5:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+.app p{
+    font-size: 1.2rem;
+    margin-left: 10px ;
+    margin-right: 20px ;
+}
+hr{
+    background-color: #848a9d;
+    
+}
