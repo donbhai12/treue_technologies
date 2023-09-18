@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Values</title>
+</head>
+<body>
+    <input type="number" id="input1" placeholder="Enter a number">
+    <input type="number" id="input2" placeholder="Result" readonly>
+    <button onclick="changeValues()">Change Values</button>
+
+    <script>
+        // Function to change the values in input1 and input2
+        function changeValues() {
+            const input1 = document.getElementById('input1');
+            const input2 = document.getElementById('input2');
+
+            // Change the values
+            input1.value = 5; // Change input1's value to 5
+            input2.value = 15; // Change input2's value to 15
+        }
+    </script>
+</body>
+</html>
